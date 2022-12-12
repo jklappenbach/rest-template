@@ -117,7 +117,7 @@ public class DemoControllerTests {
 	}
 
 	@Test
-	public void givenPost_with_InvalidBody_thenReturns400() throws Exception {
+	public void given_POST_with_InvalidBody_thenReturns400() throws Exception {
 		CreateEmployeeRequest request = new CreateEmployeeRequest("Marty", "");
 		MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/employees")
 						.accept(MediaType.APPLICATION_JSON_VALUE)
